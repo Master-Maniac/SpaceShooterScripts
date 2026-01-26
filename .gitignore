@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# Allow Assets folder
+!Assets/
+Assets/*
+
+# Allow Scripts folder
+!Assets/Scripts/
+Assets/Scripts/*
+
+# Allow C# files inside Scripts
+!Assets/Scripts/**/*.cs
+
+# Allow .gitignore itself
+!.gitignore
