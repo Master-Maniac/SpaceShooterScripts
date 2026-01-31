@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerFollower : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    [SerializeField] private float followingSpeed = 5f;
+    [SerializeField] private float followingSpeed = 10;
+     
+    [SerializeField] private Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,7 @@ public class PlayerFollower : MonoBehaviour
     // Update is called once per frame
     private void LateUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, target.position, followingSpeed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, target.position+offset, followingSpeed * Time.deltaTime);
         transform.rotation = target.rotation;
     }
  

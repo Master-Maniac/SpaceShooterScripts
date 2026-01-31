@@ -13,11 +13,12 @@ public class SpaceShipController : MonoBehaviour
     private float yaw;
     private float pitch;
     Quaternion defaultRotation;
-
+    private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         defaultRotation = transform.localRotation;
+        rb = GetComponent<Rigidbody>();
     }
     private void Update()
     {
@@ -32,9 +33,11 @@ public class SpaceShipController : MonoBehaviour
         if (Input.GetKey(KeyCode.Q)) IncreaseSpeed();
         if (Input.GetKey(KeyCode.E)) DecreaseSpeed();
     }
+
     private void Movement()
     {
        transform.position +=  transform.forward*movementSpeed*Time.deltaTime;
+     
     }
     private void Rotation()
     {

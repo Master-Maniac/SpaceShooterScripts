@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 using UnityEngine.UI;
 
 public class FpsCalculator : MonoBehaviour
@@ -17,4 +18,5 @@ public class FpsCalculator : MonoBehaviour
         float frameRate = 1f / Time.unscaledDeltaTime;
         fpsText.text = (int)(frameRate) + " fps";
     }
+    
 }
