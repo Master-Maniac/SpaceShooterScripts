@@ -1,11 +1,19 @@
 # Ignore everything
 *
 
-# Allow Assets folder
+# Allow folders
 !Assets/
-!Assets/Scripts/
-!Assets/Scripts/**/
-!Assets/Scripts/**/*.cs
+!ProjectSettings/
+!Packages/
 
-# Allow .gitignore itself
-!.gitignore
+# Allow contents inside these folders
+!Assets/**
+!ProjectSettings/**
+!Packages/**
+
+# Allow meta files (important for Unity)
+!*.meta
+
+# Optional: allow solution/project files (if needed)
+!*.sln
+!*.csproj

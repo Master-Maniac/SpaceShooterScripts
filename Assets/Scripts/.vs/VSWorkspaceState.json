@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GamePlay",
+    "\\Input",
+    "\\NavMesh",
+    "\\Player"
+  ],
+  "SelectedNode": "\\NavMesh\\VoxelNavData.cs",
+  "PreviewInSolutionExplorer": false
+}
